@@ -4,6 +4,7 @@ emoji: "😀"
 type: "tech"
 topics: [Vim,Rust,VSCode,rustfmt]
 published: false
+published_at: 2023-01-31
 ---
 ## 症状
 vimやvscodeでファイル保存時に`rustfmt`でコードが自動整形されるよう設定しているにも関わらず、コードが整形されなかった。
