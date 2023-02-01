@@ -10,7 +10,7 @@ published_at: 2023-01-31
 
 Rustで複数接続可能なチャットサーバーを作る。
 最終的には以下の機能を実装することを目指す。
-- 複数クライアントの同時接続（次回記事）
+- 複数クライアントの同時接続（[次回記事](https://zenn.dev/yongikim/articles/rust-chat-server-2)）
 - LINEのグループやSlackのチャンネルのようなチャットルーム機能
 - WebSocket等による双方向通信
 
@@ -150,7 +150,7 @@ async fn accept_connection(mut stream: TcpStream) {
 }
 ```
 
-次回は複数クライアントの同時接続に対応する。
+[次回](https://zenn.dev/yongikim/articles/rust-chat-server-2)は複数クライアントの同時接続に対応する。
 
 # 参考
 - [Creating a Chat Server with async Rust and Tokio](https://www.youtube.com/watch?v=Iapc-qGTEBQ)

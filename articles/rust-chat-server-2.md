@@ -4,7 +4,7 @@ emoji: "😀"
 type: "tech"
 topics: [Rust,TCP,tokio]
 published: false
-published_at: 2023-02-02
+published_at: 2023-02-01
 ---
 # 概要
 
@@ -14,7 +14,7 @@ Rustで複数接続可能なチャットサーバーを作る。
 - LINEのグループやSlackのチャンネルのようなチャットルーム機能
 - WebSocket等による双方向通信
 
-前回は、単一クライアントとの接続を実装した。
+[前回](https://zenn.dev/yongikim/articles/rust-chat-server-1)は、単一クライアントとの接続を実装した。
 今回は、`tokio`を用いた並行化によって複数クライアントの同時接続を実装する。
 
 # 前回までのコード
@@ -77,7 +77,7 @@ async fn accept_connection(mut stream: TcpStream) {
 # `tokio::spawn()`を用いた並行化による同時接続の実現
 複数クライアントの同時接続を可能にするため、`tokio::spawn()`を用いてタスクを生成する。  
 `tokio:::spawn()`によって生成されたタスクは、`tokio`の非同期ランタイムによって並行に実行される。  
-（昔書いた記事も読んでみてほしい）
+（[昔書いた記事](https://zenn.dev/yongikim/articles/rust-async-concurrent)も読んでみてほしい）
 
 
 `main`関数では次のように通信を処理していた。
