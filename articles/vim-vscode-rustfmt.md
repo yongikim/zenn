@@ -3,7 +3,7 @@ title: "vimやvscodeでrustfmtによる自動整形が効かないとき"
 emoji: "😀"
 type: "tech"
 topics: [Vim,Rust,VSCode,rustfmt]
-published: false
+published: true
 published_at: 2023-01-31
 ---
 ## 症状
