@@ -7,7 +7,7 @@ published: true
 ---
 
 ## 背景
-[このドキュメント](https://rust-unofficial.github.io/too-many-lists/second-option.html)に沿ってRustで単連結リストを書いていて、リストに要素を追加する際、既存のリストの先頭要素を新しく追加する要素の`next`要素に付け替えようとしたところ、以下のようなエラーが発生した。
+[このドキュメント](https://rust-unofficial.github.io/too-many-lists/second-option.html)に沿ってRustで単連結リストを書いていて、リストに要素を追加する際、既存のリストの先頭要素を新しく追加する要素の`next`フィールドに付け替えようとしたところ、以下のようなエラーが発生した。
 
 > cannot move out of `self.head` which is behind a mutable reference
 
